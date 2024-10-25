@@ -45,13 +45,15 @@ namespace TaskTarget
         }
         static long FourthFunction(int index)
         {
-            
             return Convert.ToInt64(Math.Pow(index, 3));
         }
         static int FithFunction1()
         {
             //return new List<char> { 'a', 'b', 'c', 'd', 'e' }.Count;
-            return (int)Nums.Five;
+            //return (int)Nums.Five;
+            //return new List<char> { 'a', 'b', 'c', 'd', 'e', 'f' }.IndexOf('f');
+            return 'f' - 'a';
+           
         }
         enum Nums
         {
@@ -75,13 +77,11 @@ namespace TaskTarget
             //Console.WriteLine(ThirdFunction(23));
             //Console.WriteLine(FourthFunction(99));
 
-            for(int i =0; i< 300; i++)
+            for (int i = 0; i < 300; i++)
             {
-                Console.WriteLine( i + "  " + (char)i);
+                Console.WriteLine(i + "  " + (char)i);
             }
-            FithFunction1();
-            Console.WriteLine((int)Nums.Five);
-            int j = Int32.MinValue;
+            Console.WriteLine(FithFunction1());
             Console.WriteLine("done");
             Console.ReadKey();
         }
